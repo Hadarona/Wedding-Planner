@@ -1,0 +1,482 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+section, div {
+    width: 100%;
+}
+
+.container {
+    height: 100vh;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-bar {
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.back-gif {
+    height: 110vh;
+}
+
+h1, h2 {
+    font-family: "Pacifico", sans-serif;
+}
+
+p, h3, h4, h5, h6, div, span {
+    font-family: "Itim", sans-serif;
+}
+
+nav {
+    font-family: "Itim", sans-serif;
+    margin: 0;
+    padding: 10;
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    float: right;
+}
+
+.btn {
+    display:inline-block;
+    position:relative;
+    padding:5px 10px;
+    border:2px solid #FB0440;
+    border-radius: 30px;
+    color:#000;
+    font-family:'Itim',sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration:none;
+    z-index: 1;
+    margin:20px auto;
+    transition: color 0.4s;
+    background-color: #FFCC66;
+    box-shadow: 4px 10px 10px -3px;
+    transition: all 0.4s;
+    overflow: hidden;
+  }
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 30px;
+    background-color: #FB0440;
+    z-index: -1;
+    box-shadow: 4px 10px 10px -3px;
+    transition: all 0.4s;
+   }
+   
+.btn:hover {
+    color: #fefefe;
+   }
+
+.btn:hover::before {
+    width: 100%;
+   }
+
+
+
+.logo {
+    width: 200px;
+    float: left;
+}
+
+nav {
+    font-family: "Itim", sans-serif;
+    margin: 0;
+    padding: 10;
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    float: right;
+}
+
+
+ul.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul.nav-menu li {
+    display: inline-block;
+    margin-right: 10px;
+    position: relative;
+}
+ul.nav-menu li a {
+    text-decoration: none;
+    color: #FB0440;
+    font-size: 17px;
+    padding: 5px 10px;
+}
+
+.content {
+    text-align: center;
+}
+.content h1 {
+    font-size: 100px;
+    color: #ffffff;
+    font-weight: 100;
+    margin-top: 200px;
+}
+.content h1:hover {
+    -webkit-text-stroke: 2px #fefefe;
+    color: transparent;
+}
+
+.content p {
+    font-size: large;
+    color: #ffffff;
+    margin-top: -50px;
+}
+
+.btn-todo {
+    display:inline-block;
+    position:relative;
+    padding:14px 70px;
+    border:2px solid #FB0440;
+    border-radius: 30px;
+    color: #000;
+    font-family:'Itim',sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration:none;
+    z-index: 1;
+    margin:20px auto;
+    transition: color 0.4s;
+    background-color: #FFCC66;
+    box-shadow: 4px 10px 10px -3px;
+    transition: all 0.4s;
+    overflow: hidden;
+  }
+
+
+.btn-todo::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 30px;
+    background-color: #FB0440;
+    z-index: -1;
+    box-shadow: 4px 10px 10px -3px;
+    transition: all 0.4s;
+   }
+   
+.btn-todo:hover {
+    color: #fefefe;
+   }
+
+.btn-todo:hover::before {
+    width: 100%;
+   }
+
+.back-gif {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 0px 0px 0px 0px;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+/* For MEDIUM screens up to 768px wide */
+
+/* Here the "home-bar" section ends */
+
+.about {
+    background-color: lightgoldenrodyellow;
+    position: relative;
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    grid-column-gap: 2%;
+    padding-left: 15%;
+    padding-right: 15%;
+    box-sizing: border-box;
+}
+
+.left-paragraph {     
+    padding-top: 2%;
+    padding-bottom: 5%;
+    background-color: inherit;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+.left-paragraph h2 {
+    font-weight: lighter;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 150%;
+    color: #FB0440;
+    
+}
+.left-paragraph hr {
+    width: 70px;
+    margin-top: -20px;
+    margin-left: 0;
+}
+.par {
+    display: inline-block;
+    font-size: 90%;
+    width: auto;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    text-overflow: ellipsis;
+}
+
+.my-service-card {
+    transition: 0.3s;
+    margin: auto;
+    background-color: inherit;
+    border-radius: 10px;
+    height:auto;
+    vertical-align: middle;
+    box-sizing: border-box;
+  }
+  
+  .my-service-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .cardpic {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px 10px 0 0;
+  }
+/* Here the "about" section ends */
+
+.Services {
+    background-color: #E2DFD2;
+    position: relative;
+    height: auto;
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+    box-sizing: border-box;
+}
+
+.Services-heading {     
+    padding-top: 1%;
+    padding-bottom: 3%;
+    background-color: inherit;
+    vertical-align: middle;
+    box-sizing: border-box;
+    text-align: center;
+    max-width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.Services-heading h2 {
+    font-weight: lighter;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 150%;
+    color: #FB0440;
+}
+.Services-heading hr {
+    width: 70px;
+    margin-top: -20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.Services-heading .par {
+    display: inline-block;
+    font-size: 90%;
+    width: auto;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    text-overflow: ellipsis;
+    margin-top: -2%;
+}
+
+.grid-div {
+    position: relative;
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-column-gap: 2%;
+    box-sizing: border-box;
+}
+
+.other-services-card {
+    transition: 0.3s;
+    margin: auto;
+    background-color: inherit;
+    border-radius: 10px;
+    height: auto;
+    vertical-align: middle;
+    box-sizing: border-box;
+    text-align: center;
+}
+  
+.other-services-card:hover {
+box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-container {
+padding: 2px 16px;
+box-sizing: border-box;
+}
+
+.image-container {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-fluid {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+
+/* For MEDIUM screens 768px wide and more */
+@media (max-width: 768px) {
+.nav-menu {
+    display: none;
+}
+
+.menu-toggle {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#menu-toggle:checked ~ .nav-menu {
+    display: block;
+}
+
+.content h1 {
+    font-size: 60px;
+}
+
+.content p {
+    font-size: 16px;
+    margin-top: -30px;
+}
+
+.btn-todo {
+    padding: 10px 30px;
+    font-size: 20px;
+}
+.my-service-card {
+    height: 60%;
+    }
+}
+
+/* For LARGE screens 768px wide and more */
+@media (min-width: 769px) {
+    .nav-menu {
+        display: block;
+    }
+    
+    .menu-toggle {
+        display: none;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 9999;
+        cursor: pointer;
+    }
+
+    .hidden-checkbox {
+        visibility: hidden;
+    }
+    
+    #menu-toggle {
+        display: none;
+    }
+    
+    #menu-toggle:checked ~ .nav-menu {
+        display: block;
+    }
+    .content h1 {
+        font-size: 60px;
+    }
+
+    .content p {
+        font-size: 16px;
+        margin-top: -30px;
+    }
+    
+    .btn-todo {
+        padding: 10px 30px;
+        font-size: 20px;
+    }
+    
+}
+
+/* For SMALL screens up to 480px wide (a.k.a mobile) */
+@media (max-width: 480px) {
+    .content h1 {
+        font-size: 40px;
+    }
+
+    .content p {
+        font-size: 14px;
+        margin-top: -20px;
+    }
+    
+    .btn-todo {
+        padding: 8px 24px;
+        font-size: 18px;
+    }
+    .left-paragraph h2 {
+        max-width: 200%;
+        font-size: 30px;
+    }
+    .container {
+        font-size: 15px;
+    }
+    .my-service-card {
+        height: 60%;
+      }
+}
+
