@@ -274,8 +274,8 @@ ul.nav-menu li a {
   }
 /* Here the "about" section ends */
 
-.Services {
-    background-color: #E2DFD2;
+.services {
+    background-color: #fae6ec;
     position: relative;
     height: auto;
     width: 100%;
@@ -284,7 +284,19 @@ ul.nav-menu li a {
     box-sizing: border-box;
 }
 
-.Services-heading {     
+.project-gallery {
+    background-color: lightgoldenrodyellow;
+    position: relative;
+    height: auto;
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+    box-sizing: border-box;
+}
+section {
+    margin: 0;
+}
+.services-heading {     
     padding-top: 1%;
     padding-bottom: 3%;
     background-color: inherit;
@@ -296,7 +308,7 @@ ul.nav-menu li a {
     margin-right: auto;
     position: relative;
 }
-.Services-heading h2 {
+.services-heading h2 {
     font-weight: lighter;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -304,13 +316,13 @@ ul.nav-menu li a {
     font-size: 150%;
     color: #FB0440;
 }
-.Services-heading hr {
+.services-heading hr {
     width: 70px;
     margin-top: -20px;
     margin-left: auto;
     margin-right: auto;
 }
-.Services-heading .par {
+.services-heading .par {
     display: inline-block;
     font-size: 90%;
     width: auto;
@@ -320,15 +332,7 @@ ul.nav-menu li a {
     margin-top: -2%;
 }
 
-.grid-div {
-    position: relative;
-    height: auto;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-column-gap: 2%;
-    box-sizing: border-box;
-}
+
 
 .other-services-card {
     transition: 0.3s;
@@ -409,6 +413,16 @@ box-sizing: border-box;
 .my-service-card {
     height: 60%;
     }
+
+.grid-div {
+    position: relative;
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-column-gap: 2%;
+    box-sizing: border-box;
+}
 }
 
 /* For LARGE screens 768px wide and more */
@@ -450,6 +464,16 @@ box-sizing: border-box;
         padding: 10px 30px;
         font-size: 20px;
     }
+
+    .grid-div {
+        position: relative;
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        grid-column-gap: 2%;
+        box-sizing: border-box;
+    }
     
 }
 
@@ -477,6 +501,16 @@ box-sizing: border-box;
     }
     .my-service-card {
         height: 60%;
-      }
+    }
+    
+    .grid-div {
+        position: relative;
+        height: auto;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-column-gap: 2%;
+        box-sizing: border-box;
+    }
 }
 
