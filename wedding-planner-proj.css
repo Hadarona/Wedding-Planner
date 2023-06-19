@@ -574,7 +574,7 @@ textarea {
   border-radius: 4px;
 }
 .sub-mit {
-    justify-content: center;
+  justify-content: center;
 }
 
 .alert {
@@ -586,41 +586,43 @@ textarea {
 /*Here the contact-form section ends*/
 
 .social-buttons {
-    background-color: #fae6ec;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    height: 15vh;
-  }
-  
-  .facebook-button, .twitter-button, .linkedin-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    background-color: #3b5998; /* Facebook blue */
-    color: #fff;
-    text-decoration: none;
-    border-radius: 50%;
-    font-size: 20px;
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-  
-  .twitter-button {
-    background-color: #1da1f2; /* Twitter blue */
-  }
-  
-  .linkedin-button {
-    background-color: #0e76a8; /* LinkedIn blue */
-  }
-  
-  /*Here the social-button section ends*/
+  background-color: #fae6ec;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  height: 15vh;
+}
+
+.facebook-button,
+.twitter-button,
+.linkedin-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: #3b5998; /* Facebook blue */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50%;
+  font-size: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.twitter-button {
+  background-color: #1da1f2; /* Twitter blue */
+}
+
+.linkedin-button {
+  background-color: #0e76a8; /* LinkedIn blue */
+}
+
+/*Here the social-button section ends*/
 
 /* For LARGE screens 768px wide and more */
 @media (min-width: 769px) {
